@@ -1,0 +1,24 @@
+// Quick and simple way to define a box
+@mixin box($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+// This is a shortcut to center any block element
+@mixin center-auto {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+}
+@mixin cover-background($url) {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	@if ($url) {
+		background-image: $url;
+	}
+}
+@mixin setFlex($direction: row) {
+	display: flex;
+	flex-direction: $direction;
+}

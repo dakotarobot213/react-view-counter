@@ -10,9 +10,9 @@ const ViewCounter = () => {
 	});
 
 	return (
-		<>
-			<h1>Render Count: {sessionStorage.getItem("viewCount")}</h1>
-		</>
+		<div className='counter'>
+			<h1>You've viewed this page {sessionStorage.getItem("viewCount")} times</h1>
+		</div>
 	);
 };
 

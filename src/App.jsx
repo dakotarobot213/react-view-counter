@@ -1,4 +1,5 @@
 import Counter from "./components/ViewCounter";
+import "./styles/css/main.css";
 
 function App() {
 	return (

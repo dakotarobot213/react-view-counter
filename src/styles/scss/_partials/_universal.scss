@@ -1,0 +1,39 @@
+@import "./util/reset";
+@import "./util/mixins";
+@import "./util/variables";
+* {
+	color: $text-color;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.17em;
+}
+h5 {
+	font-size: 0.83em;
+}
+h6 {
+	font-size: 0.75em;
+}
+body {
+	@include setFlex(row);
+	justify-content: center;
+	align-content: center;
+	background-color: rgb(22, 22, 22);
+	font-family: arial;
+}
+button {
+	background-color: $primary-color-highlight;
+	border: none;
+}
+.counter {
+	text-align: center;
+	padding: 1rem;
+	background-color: purple;
+	border: 2px violet solid;
+	border-radius: 2%;
+}
